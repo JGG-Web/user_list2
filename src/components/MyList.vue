@@ -141,13 +141,13 @@ export default {
     data() {
         return {
             keyword: '',
-            // tableData: [
-            //     { id: '001', name: '张三', age: 18, sex: '男', phoneNumber: '13269641661', address: '四川省成都市武侯区' },
-            //     { id: '002', name: '李四', age: 19, sex: '女', phoneNumber: '13265321661', address: '北京市朝阳区' },
-            //     { id: '003', name: '王五', age: 20, sex: '女', phoneNumber: '13269746211', address: '上海市黄浦区' },
-            //     { id: '004', name: '赵六', age: 21, sex: '男', phoneNumber: '17569649261', address: '广东省广州市天河区' }
-            // ],
-            tableData: JSON.parse(localStorage.getItem('tableData')) || [],
+            tableData: [
+                { id: '001', name: '张三', age: 18, sex: '男', phoneNumber: '13269641661', address: '广东省广州市海珠区' },
+                { id: '002', name: '李四', age: 19, sex: '女', phoneNumber: '13265321661', address: '广东省广州市番禺区' },
+                { id: '003', name: '王五', age: 20, sex: '女', phoneNumber: '13269746211', address: '广东省广州市越秀区' },
+                { id: '004', name: '赵六', age: 21, sex: '男', phoneNumber: '17569649261', address: '广东省广州市天河区' }
+            ],
+            // tableData: JSON.parse(localStorage.getItem('tableData')) || [],
             formAdd: {
                 // 表单姓名
                 name: '',
@@ -310,7 +310,6 @@ export default {
                 localStorage.setItem('tableData', JSON.stringify(value))
             }
         }
-
     }
 }
 </script>
